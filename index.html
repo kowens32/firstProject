@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Off Season!</title>
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Style Section -->
+    <!-- Materialize 0.100.2 CDN -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- In-house CSS -->
+	  <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+    <!-- jQuery 3.2.1 CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <!-- jQuery UIs for datepicker themes -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+
+
+    <!-- Moment JS CDN -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+
+</head>
+<body>
+<div id="last-visit"></div>
+<div class="hideMeAtLoad">
+    <!-- Landing Page Container -->
+    <div class="container" id="landing-page">
+
+        <!-- Calendar Date Pickers -->
+        <div class="row">
+
+            <!-- Query Builder block -->
+        	<div class="col l3 m3 s12" id="query-div">
+	            <!-- Start Date, offsets row -->
+                    <input type="text" id="start-date" placeholder="Start Date">
+	            <!-- End Date -->
+                    <input type="text" id="end-date" placeholder="End Date">
+	            <!-- National vs Domestic -->
+	                <button id="domestic"
+	                   class="region btn btn-large orange lighten-1 hoverable center-align"
+	                        value="domestic">Domestic</button>
+	                <button id="international"
+	                   class="region btn btn-large orange lighten-1 hoverable center-align"
+	                        value="international">International</button>
+            </div>
+            <!-- End Query Builder block -->
+
+            <!-- Card Holder Div -->
+			<div class="col offset-l5 l7 offset-m5 m7 s12 result-cards" id="result-cards">
+                <!-- Dynamically add Cards here -->
+			</div>
+
+        </div><!-- End Row -->
+    </div><!-- End Container -->
+</div><!-- End onLoad wrapper -->
+
+    <div class="anime"><h1 class="brand orange-text lighten-1 center-align">Off Season<br><small class="small"><em>Where the F%$#^@# Should I Go?</em></small></h1></div>
+
+
+    <!-- Materialize CSS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Helper Scripts -->
+    <script src="assets/javascript/cookie.js"></script>
+    <script src="assets/javascript/cardBuilder.js"></script>
+    <script src="assets/javascript/imgAPI.js"></script>
+    <script src="assets/javascript/hotwireAPI.js"></script>
+    <script src="assets/javascript/site.js"></script>
+    <script src="assets/javascript/animation.js"></script>
+
+</body>
+</html>
